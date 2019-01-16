@@ -1,5 +1,5 @@
-class Giphy {
-  getGiph(index){
+ export class Giphy {
+  getGiph(){
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
       let url = `http://api.giphy.com/v1/gifs/search?q=dinosaurs&api_key=${process.env.GIPHY_API_KEY}&limit=25`;
